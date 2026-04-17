@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.read_csv("bgp_updates.csv")
+df = pd.read_csv("edited_bgp_updates.csv")
 
 # Clean AS path
 df["as_path"] = df["as_path"].fillna("")
@@ -26,5 +26,5 @@ print(prefix_features.head(20))
 print("\nSuspicious prefixes:")
 print(prefix_features[prefix_features["suspicious"]].head(20))
 
-prefix_features.to_csv("prefix_features.csv", index=False)
+prefix_features.to_csv("edited_prefix_features.csv", index=False)
 print("\nSaved to prefix_features.csv")

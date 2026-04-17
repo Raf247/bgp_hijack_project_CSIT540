@@ -1,7 +1,7 @@
 import pandas as pd
 from sklearn.ensemble import IsolationForest
 
-df = pd.read_csv("prefix_features.csv")
+df = pd.read_csv("edited_prefix_features.csv")
 
 features = df[["updates", "avg_path_len", "max_path_len", "min_path_len", "unique_origins"]]
 

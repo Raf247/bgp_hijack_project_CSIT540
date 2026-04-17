@@ -7,12 +7,14 @@ DATA_DIR = "../data"
 OUTPUT_FILE = "edited_bgp_updates.csv"
 
 files_to_process = [
-    "updates.20240627.1815.bz2",
-    "updates.20240627.1830.bz2",
-    "updates.20240627.1845.bz2",
-    "updates.20240627.1900.bz2",
-    "updates.20240627.1915.bz2",
-    "updates.20240627.1930.bz2",
+    "updates.20240627.2145.bz2",
+    "updates.20240627.2200.bz2",
+    "updates.20240627.2215.bz2",
+    "updates.20240627.2230.bz2",
+    "updates.20240627.2245.bz2",
+    
+    
+
 ]
 
 with open(OUTPUT_FILE, "w", newline="", encoding="utf-8") as out:

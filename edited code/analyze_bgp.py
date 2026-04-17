@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.read_csv("bgp_updates.csv")
+df = pd.read_csv("edited_bgp_updates.csv")
 
 df["origin_as"] = df["as_path"].fillna("").apply(
     lambda x: x.split()[-1] if isinstance(x, str) and x.strip() else None
